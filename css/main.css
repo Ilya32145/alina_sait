@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.945);
+    color: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#gradient {
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0) 0%, 
+        rgba(106, 113, 204, 0.158) 100%
+    );
+}
+
+.container {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.btn {
+    background-color: orange;
+    border-radius: 15px;
+}
+
+.hero {
+    width: min(1400px, 92%);
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 60px;
+}
+
+
+p.text {
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p.zagolovok {
+    color: white;
+    font-size: clamp(36px, 4vw, 58px);
+    line-height: 1.15;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+p.text2 {
+    color: white;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+.button,
+.button2 {
+    display: inline-block;
+    color: black;
+    background-color: orange;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 15px;
+}
+
+.coala {
+
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.popular {
+    width: min(1400px, 92%);
+    margin: 90px auto 60px;
+   
+    
+}
+
+.popular-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+   
+}
+
+p.sip {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.popular-place {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    list-style: none;
+    width: 100%;
+    gap: 20px;
+   
+    
+}
+
+.place {
+    max-width: 100%;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.followers1 {
+    max-width: 10%;
+    margin-top: 15px;
+}
+
+.popular-place-followers {
+     display: flex;
+     align-items: center;
+     font-size: clamp(10px, 1.5vw, 20px);
+     gap: 10px;
+     justify-content: center;
+     margin-right: 20px;
+    
+}
+
+.water {
+    
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 1000;
+}
+
+.sixseven {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+}
+
+.centr-text {
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    font-size: clamp(10px, 2vw, 40px);
+
+}
+
+.sixseven-text-zagolovok {
+    margin-top: 80px;
+    font-size: clamp(10px, 1.5vw, 30px);
+}
+
+.sixseven-text {
+    
+    margin-top: 20px;
+    font-size: clamp(10px, 1vw, 30px);
+}
+
+.placephoto {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.razdel {
+    width: min(2000px, 100%);
+    margin: 100px auto;
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.774)), url(https://subconsciouschange.com/wp-content/uploads/2023/07/4c71b-0045-5656-bac3-5e17c53efd7_Untitled_design_28_.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+
+    
+    
+}
+
+.razdel-text1 {
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    font-size: clamp(10px, 3vw, 40px);
+    
+    
+}
+
+.razdel-text2 {
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    font-size: clamp(10px, 1.5vw, 30px);
+}
+
+.gora {
+    width: min(1400px, 92%);
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    list-style: none;
+    gap: 20px;
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+    font-size: clamp(1px, 2vw, 20px);
+    font-weight: bold;
+    
+}
+
+.gora2 {
+    width: min(1400px, 92%);
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 30%;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    font-size: clamp(1px, 2vw, 20px);
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+
+.znachok {
+    width: clamp(1px, 5vw, 100px);
+    display: block;
+    margin: 10px auto 0;
+    margin-bottom: 30px;
+}
+
+.strelka {
+    display: block;
+    width: clamp(1px, 2vw, 60px);
+    margin: 10px auto 0;
+    
+}
+
+.pochti {
+    text-align: center;
+    width: min(1400px, 92%);
+    margin: 0px auto;
+    padding-bottom: 80px;
+   
+}
+
+.pochti1 {
+    font-size: clamp(10px, 3vw, 40px); 
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.pochti2 {
+    font-size: clamp(10px, 3vw, 20px); 
+}
+
+.ludi {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.ludi2 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.people {
+    border-radius: 30px;
+}
+
+.button15 {
+    margin-top: 50px;
+    display: inline-block;
+    background-color: orange;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 15px;
+}
+
+.button10 {
+    color: #000;
+}
+
+.inemail {
+    margin-top: 200px;
+    justify-content: left;
+    text-align: left;
+}
+
+.email {
+    font-size: clamp(10px, 3vw, 40px); 
+    margin-bottom: 20px;
+  
+}
+
+.minemail {
+    font-size: clamp(10px, 3vw, 20px); 
+    
+}
+
+.pole {
+    
+    width: clamp(10px, 20vw, 300px); 
+    height: 50px;
+    border-radius: 20px;
+    border-color: orange;
+    margin-top: 70px;
+   
+}
+
+.forme {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(10px, 30vw, 600px); 
+}
+
+
+ .button20 {
+    
+    background-color: orange;
+    padding: 7px 12px;
+    border-radius: 10px;
+    color: black;
+    top: 2px;
+    
+} 
+
+
+
+input::placeholder {
+    padding-left: 20px;
+}
+
+#gradient2 {
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0) 0%, 
+        rgba(221, 180, 103, 0.123) 100%
+    );
+}
+
+.konec {
+    width: min(1400px, 92%);
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 70px;
+    padding-bottom: 70px;
+    
+}
+
+.conec {
+    list-style: none;
+    
+}
+
+
+.make {
+    font-size: clamp(10px, 3vw, 20px); 
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.about-us {
+    font-size: clamp(10px, 3vw, 20px); 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.us {
+    font-size: clamp(5px, 3vw, 20px); 
+    line-height: 35px;
+}
+
+.cont {
+    font-size: clamp(10px, 3vw, 20px); 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.num {
+  font-size: clamp(10px, 3vw, 20px);   
+  line-height: 50px;
+
+}
+
