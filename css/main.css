@@ -56,12 +56,11 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
-    list-style: none;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
 
-.menu li a {
+.menu a {
     display: block;
     padding: 12px 18px;
     font-size: 18px;
@@ -72,7 +71,17 @@ img {
 .btn {
     background-color: orange;
     border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    padding: 2vh 2vh;
+    border: black;
 }
+
+.btn:hover {
+    cursor: pointer;
+}
+
 
 .hero {
     width: min(1400px, 92%);
@@ -151,7 +160,6 @@ p.sip {
 .popular-place {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    list-style: none;
     width: 100%;
     gap: 20px;
    
@@ -164,12 +172,12 @@ p.sip {
     border-radius: 20px;
 }
 
-.followers1 {
+.fire-img {
     max-width: 10%;
     margin-top: 15px;
 }
 
-.popular-place-followers {
+.popular-place-likes {
      display: flex;
      align-items: center;
      font-size: clamp(10px, 1.5vw, 20px);
@@ -179,19 +187,19 @@ p.sip {
     
 }
 
-.water {
+.place-likes {
     
     margin-top: 20px;
     font-style: italic;
     font-weight: 1000;
 }
 
-.sixseven {
+.before-popular-place {
     width: min(1400px, 92%);
     margin: 0 auto;
 }
 
-.centr-text {
+.bpp-centr-text {
     justify-content: center;
     text-align: center;
     margin-top: 200px;
@@ -199,12 +207,12 @@ p.sip {
 
 }
 
-.sixseven-text-zagolovok {
+.bpp-text-zagolovok {
     margin-top: 80px;
     font-size: clamp(10px, 1.5vw, 30px);
 }
 
-.sixseven-text {
+.bpp-text {
     
     margin-top: 20px;
     font-size: clamp(10px, 1vw, 30px);
@@ -217,7 +225,7 @@ p.sip {
     margin-top: 20px;
 }
 
-.razdel {
+.main-locations {
     width: min(2000px, 100%);
     margin: 100px auto;
     background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.774)), url(https://subconsciouschange.com/wp-content/uploads/2023/07/4c71b-0045-5656-bac3-5e17c53efd7_Untitled_design_28_.webp);
@@ -225,34 +233,30 @@ p.sip {
     background-size: cover;
     height: auto;
 
-    
-    
 }
 
-.razdel-text1 {
+.text1-main-locations {
     justify-content: center;
     text-align: center;
     padding: 30px;
     font-size: clamp(10px, 3vw, 40px);
     
-    
 }
 
-.razdel-text2 {
+.text2-main-locations {
     justify-content: center;
     text-align: center;
     margin-top: 10px;
     font-size: clamp(10px, 1.5vw, 30px);
 }
 
-.gora {
+.geographical-locations-top {
     width: min(1400px, 92%);
     margin: 100px auto;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     list-style: none;
     gap: 20px;
-    width: 60%;
     justify-content: center;
     text-align: center;
     font-size: clamp(1px, 2vw, 20px);
@@ -260,13 +264,12 @@ p.sip {
     
 }
 
-.gora2 {
+.geographical-locations-bottom {
     width: min(1400px, 92%);
     margin: 100px auto;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 20px;
-    width: 30%;
     justify-content: center;
     list-style: none;
     text-align: center;
@@ -276,21 +279,21 @@ p.sip {
 }
 
 
-.znachok {
+.geographical-locations-img {
     width: clamp(1px, 5vw, 100px);
     display: block;
     margin: 10px auto 0;
     margin-bottom: 30px;
 }
 
-.strelka {
+.geographical-locations-arrow-img {
     display: block;
     width: clamp(1px, 2vw, 60px);
     margin: 10px auto 0;
     
 }
 
-.pochti {
+.user-selection {
     text-align: center;
     width: min(1400px, 92%);
     margin: 0px auto;
@@ -298,24 +301,24 @@ p.sip {
    
 }
 
-.pochti1 {
+.user-selection-text1 {
     font-size: clamp(10px, 3vw, 40px); 
     font-weight: bold;
     padding-bottom: 40px;
 }
 
-.pochti2 {
+.user-selection-text2 {
     font-size: clamp(10px, 3vw, 20px); 
 }
 
-.ludi {
+.user-photo1 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     margin-top: 40px;
 }
 
-.ludi2 {
+.user-photo2 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
@@ -323,11 +326,11 @@ p.sip {
 }
 
 
-.people {
+.user-img {
     border-radius: 30px;
 }
 
-.button15 {
+.user-selection-button {
     margin-top: 50px;
     display: inline-block;
     background-color: orange;
@@ -335,53 +338,56 @@ p.sip {
     font-weight: bold;
     padding: 12px 18px;
     border-radius: 15px;
-}
-
-.button10 {
     color: #000;
 }
 
-.inemail {
+.send-email {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(10px, 30vw, 600px); 
     margin-top: 200px;
     justify-content: left;
     text-align: left;
 }
 
-.email {
+.send-email-text1 {
     font-size: clamp(10px, 3vw, 40px); 
     margin-bottom: 20px;
   
 }
 
-.minemail {
+.send-email-text2 {
     font-size: clamp(10px, 3vw, 20px); 
     
 }
-
-.pole {
+.input-email{
     
-    width: clamp(10px, 20vw, 300px); 
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.input-email input {
+    flex-grow: 1;
+    width: 30%; 
     height: 50px;
     border-radius: 20px;
     border-color: orange;
-    margin-top: 70px;
-   
-}
-
-.forme {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: clamp(10px, 30vw, 600px); 
-}
-
-
- .button20 {
+    outline: none;
     
+}
+
+ .input-email button {
+    position: relative;
+    left: -27%;
     background-color: orange;
     padding: 7px 12px;
     border-radius: 10px;
     color: black;
-    top: 2px;
+    border: none;
+    padding: 1vh 3vh;
+    width: 25%;
     
 } 
 
@@ -399,7 +405,7 @@ input::placeholder {
     );
 }
 
-.konec {
+footer {
     width: min(1400px, 92%);
     margin: 0px auto;
     display: grid;
@@ -409,36 +415,24 @@ input::placeholder {
     
 }
 
-.conec {
-    list-style: none;
-    
-}
-
-
-.make {
+.footer-text {
     font-size: clamp(10px, 3vw, 20px); 
     margin-top: 20px;
     line-height: 35px;
 }
 
-.about-us {
+.footer-text-about-us {
     font-size: clamp(10px, 3vw, 20px); 
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.us {
+.footer-text-before-about-us {
     font-size: clamp(5px, 3vw, 20px); 
     line-height: 35px;
 }
 
-.cont {
-    font-size: clamp(10px, 3vw, 20px); 
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.num {
+.footer-number {
   font-size: clamp(10px, 3vw, 20px);   
   line-height: 50px;
 
