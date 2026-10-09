@@ -250,7 +250,7 @@ p.sip {
     font-size: clamp(10px, 1.5vw, 30px);
 }
 
-.geographical-locations-top {
+.geographical-locations-list {
     width: min(1400px, 92%);
     margin: 100px auto;
     display: grid;
@@ -264,19 +264,11 @@ p.sip {
     
 }
 
-.geographical-locations-bottom {
-    width: min(1400px, 92%);
-    margin: 100px auto;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 20px;
-    justify-content: center;
-    list-style: none;
-    text-align: center;
-    font-size: clamp(1px, 2vw, 20px);
-    font-weight: bold;
-    padding-bottom: 50px;
+.geographical-location:nth-child(5) {
+    grid-column: 2;
+    
 }
+
 
 
 .geographical-locations-img {
@@ -284,13 +276,19 @@ p.sip {
     display: block;
     margin: 10px auto 0;
     margin-bottom: 30px;
+    min-width: 100px;
 }
 
 .geographical-locations-arrow-img {
     display: block;
     width: clamp(1px, 2vw, 60px);
     margin: 10px auto 0;
+    min-width: 50px;
     
+}
+
+.geographical-locations-text{
+    font-size: clamp(10px, 2vw, 40px);
 }
 
 .user-selection {
@@ -438,3 +436,95 @@ footer {
 
 }
 
+/* mobile */
+@media (max-width:500px) {
+    .hero {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+@media (max-width: 850px) {
+    .popular-place {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 400px) {
+    .popular-place {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .geographical-locations-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .geographical-location:nth-child(5) {
+    grid-column: 1;
+    
+    
+}
+    
+    
+}
+
+@media (max-width: 300px) {
+    .geographical-locations-img{
+        min-width: 40px;
+    }
+    .geographical-locations-arrow-img{
+        min-width: 20px;
+    }
+    .geographical-location:nth-child(5) {
+    grid-column: 1;
+    
+}
+    
+    
+}
+
+
+@media (max-width: 800px) {
+.user-photo1 {
+    grid-template-columns: minmax(0, 1fr);
+  
+     
+}
+}
+@media (max-width: 800px) {
+.user-photo2 {
+    grid-template-columns: minmax(0, 1fr);
+}
+}
+@media (max-width: 1050px) {
+    .bpp-centr-text {
+        font-size: clamp(1px, 4vw, 60px);
+    }
+    .bpp-text-zagolovok{
+        font-size: clamp(1px, 4vw, 50px);
+    }
+    .bpp-text{
+       font-size: clamp(1px, 2vw, 30px); 
+    }
+    
+}
+@media (max-width: 650px) {
+    .bpp-centr-text {
+        font-size: clamp(1px, 6vw, 80px);
+    }
+    .bpp-text-zagolovok{
+        font-size: clamp(1px, 5vw, 60px);
+    }
+    .bpp-text{
+       font-size: clamp(1px, 4vw, 50px); 
+    }
+}
+@media (max-width: 320px) {
+    .bpp-centr-text {
+        font-size: clamp(1px, 7vw, 100px);
+    }
+    .bpp-text-zagolovok{
+        font-size: clamp(1px, 6vw, 80px);
+    }
+    .bpp-text{
+       font-size: clamp(1px, 5vw, 60px); 
+    }
+    
+}
